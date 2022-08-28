@@ -21,10 +21,11 @@ public:
     Trie(int N = 26, char ALPHABET_FIRST = 'a');
     ~Trie();
 
-public:
+private:
     TrieNode* create_node();
     void remove_node(TrieNode* node);
 
+public:
     void insert(const char* word);
     void remove(const char* word, TrieNode* suffix_root = nullptr);
 
